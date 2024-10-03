@@ -1,0 +1,11 @@
+spring:
+  ai:
+    vectorstore:
+      typesense:
+        client:
+          host: ${GCP_MILVUS:localhost}
+          port: 8108
+          protocol: http
+          api-key: xyz
+        collectionName: "vector_store"
+        embeddingDimension: 1536
